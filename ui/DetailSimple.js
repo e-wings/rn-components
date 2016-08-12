@@ -11,7 +11,7 @@ export default class DetailSimple extends Component{
   _toList(){
     const { navigator } = this.props;
     if(navigator) {
-        navigator.pop();
+        navigator.pop(); 
     }
   }
 
