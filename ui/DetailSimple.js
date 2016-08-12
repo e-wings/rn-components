@@ -5,13 +5,12 @@ import {
   View,
   TouchableOpacity,
 } from 'react-native';
-import SecondPageComponent from '../../SecondPageComponent';
 
 export default class DetailSimple extends Component{
   _toList(){
     const { navigator } = this.props;
     if(navigator) {
-        navigator.pop(); 
+        navigator.pop();
     }
   }
 
@@ -20,7 +19,7 @@ export default class DetailSimple extends Component{
     if(navigator) {
       navigator.push({
           name: 'SecondPageComponent',
-          component: SecondPageComponent,
+          component: this.props.nextComponent,
       })
     }
   }
